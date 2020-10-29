@@ -8,7 +8,10 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'index_bundle.js'
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    inject: true,
+    template: path.resolve(__dirname, './src/index.html')
+  })],
   module: {
     rules: [
       {
