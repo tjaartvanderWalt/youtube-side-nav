@@ -6,7 +6,8 @@ module.exports = {
   entry: './index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'index_bundle.js'
+    filename: 'index_bundle.js',
+    publicPath: './'
   },
   plugins: [new HtmlWebpackPlugin({
     inject: true,
@@ -25,6 +26,14 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      }
     ],
   }
 };
