@@ -1,6 +1,8 @@
 @import "./normalize";
 @import "./main-navigation";
+@import "./side-navigation";
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: #0f0f0f;
 }

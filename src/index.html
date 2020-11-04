@@ -1,14 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Side Navigation Project</title>
-</head>
-<body>
-  <div class="main-navigation">
-    <button class="navigation-toggle"></button>
-    <img class="logo" src=<%=require("./assets/images/logo-icon.svg").default%> />
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Navigation Project</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-navigation">
+      <button class="navigation-toggle"></button>
+      <img class="logo"
+      src=<%=require("./assets/images/logo-icon.svg").default%> />
+    </div>
+    <div class="side-navigation">
+      <div class="side-navigation__group">
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-home.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Home</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-trending.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Trending</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-subscription.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Subscription</div>
+        </div>
+      </div>
+      <hr class="side-navigation__separator" />
+      <div class="side-navigation__group">
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-library.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Library</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-history.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">History</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-your-videos.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Your Videos</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-watch-later.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Watch later</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-playlist.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Playlist</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-liked-videos.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Liked videos</div>
+        </div>
+      </div>
+      <hr class="side-navigation__separator" />
+      <div class="side-navigation__group">
+        <div class="side-navigation__header">Subscriptions</div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-browse-channels.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Browse channels</div>
+        </div>
+      </div>
+      <hr class="side-navigation__separator" />
+      <div class="side-navigation__group">
+        <div class="side-navigation__header">More From YouTube</div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-youtube-premium.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">YouTube Premium</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-movies.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Movies & Shows</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-gaming.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Gaming</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-live.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Live</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-beuty-fasion.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Fasion & Beauty</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-learning.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Learning</div>
+        </div>
+      </div>
+      <hr class="side-navigation__separator" />
+      <div class="side-navigation__group">
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-settings.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Settings</div>
+        </div>
+      </div>
+      <hr class="side-navigation__separator" />
+      <div class="side-navigation__group">
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-report-history.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Report History</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-help.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Help</div>
+        </div>
+        <div class="side-navigation__item">
+          <div class="side-navigation__item__icon">
+            <%=require("!!raw-loader!./assets/images/side-nav-icons/icon-feedback.svg").default%>
+          </div>
+          <div class="side-navigation__item__label">Send feedback</div>
+        </div>
+      </div>
+      <hr class="side-navigation__separator" />
+      <div class="side-navigation__group">
+        <div class="side-navigation__links_item">
+          <a class="side-navigation__links">About</a>
+          <a class="side-navigation__links">Press</a>
+          <a class="side-navigation__links">Copiright</a>
+          <a class="side-navigation__links">Contact Us</a>
+          <a class="side-navigation__links">Creators</a>
+          <a class="side-navigation__links">Advertise</a>
+          <a class="side-navigation__links">Developers</a>
+        </div>
+        <div class="side-navigation__links_item">
+          <a class="side-navigation__links">Terms</a>
+          <a class="side-navigation__links">Privacy</a>
+          <a class="side-navigation__links">Policy & Safety</a>
+          <a class="side-navigation__links">How YouTube works</a>
+          <a class="side-navigation__links">Test new features</a>
+        </div>
+        <div class="side-navigation__copyright_text">
+          &#169; 2020 Google LLC
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
