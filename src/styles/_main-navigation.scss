@@ -1,0 +1,22 @@
+.main-navigation {
+  background-color: #202020;
+  height: 56px;
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation-toggle {
+  background: url("../assets/images/burger-menu.svg") no-repeat;
+  height: 12px;
+  width: 18px;
+  border: none;
+  padding: 8px;
+  margin-right: 16px;
+}
+
+.logo {
+  height: 17px;
+}
